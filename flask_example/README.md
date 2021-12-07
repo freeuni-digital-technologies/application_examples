@@ -13,7 +13,7 @@ python3 -m pip install flask
 ```
 
 ### კოდი
-- გადმოწერეთ კოდის ფაილები ან დააკლონირეთ გითჰაბიდან
+- [გადმოწერეთ](https://github.com/freeuni-digital-technologies/application_examples/archive/refs/heads/main.zip) კოდის ფაილები ან დააკლონირეთ გითჰაბის მეშვეობით
 - აპლიკაციის კოდი არის ფოლდერში application_examples/flask_example
 - ამ კოდის გასაშვებად უნდა გახსნათ ტერმინალი ფოლდერში და ჩაწეროთ `flask run`
 

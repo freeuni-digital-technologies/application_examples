@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>დაშიფვრა</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+	<div>
+		<div>
+		ამ მაგალითის გარჩევის ინსტრუქცია შეგიძლიათ ნახოთ აპლიკაციების <a href="../index.html">მთავარ გვერდზე</a>
+		</div>
+		<h1>პრიმიტიული ალგორითმი</h1>
+		
+		<div id="primitiveEncrypt">
+			<span>ტექსტი: </span>
+			<input class="userInput">
+			<button class="encrypt">დაშიფვრა</button>
+			<button class="decrypt">შიფრის მოხსნა</button>
+			<span>შედეგი: <span class="result"></span></span>
+		</div>
+	</div>
+
+	<div>
+		<h1>პაროლიანი ალგორითმი</h1>
+		<div id="passwordEncrypt">
+			<div>
+				<span>ტექსტი: </span>
+				<input class="userInput">
+			</div>
+			<span>პაროლი: </span>
+			<input class="password">
+			<button class="encrypt">დაშიფვრა</button>
+			<button class="decrypt">შიფრის მოხსნა</button>
+			<span>შედეგი: <span class="result"></span></span>
+		</div>
+
+	</div>
+
+	<div>
+		<h1>პაროლის გამოცნობა</h1>
+		<p>გამოიცნობს პაროლს, თუ ის არის 4 ციფრიანი რიცხვი</p>
+		<div id="hackPassword">
+			<span>დაშიფრული ტექსტი:</span>
+			<input class="userInput">
+			<button class="hack">შიფრის გამოცნობა</button>
+			<div class="result"></div>
+		</div>
+	</div>
+	<!-- crypto-js ბიბლიოთეკა -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+	<!-- დაშიფვრის ალგორითმები -->
+	<script type="text/javascript" src="encrypt.js"></script>
+	<!-- user interface ფუნქციები (ღილაკები და ტექსტი) -->
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

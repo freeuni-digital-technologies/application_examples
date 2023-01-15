@@ -12,7 +12,7 @@ let primitiveDecryptButton = document.querySelector('#primitiveEncrypt .decrypt'
 
 primitiveDecryptButton.onclick = function () {
 	let userInput = getInput('#primitiveEncrypt .userInput')
-	let decryptedText = offsetEncrypt(userInput)
+	let decryptedText = offsetDecrypt(userInput)
 	setResult('#primitiveEncrypt', decryptedText)
 }
 

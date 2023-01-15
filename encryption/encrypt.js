@@ -1,10 +1,11 @@
 function offsetEncrypt(text) {
 	let encryptedText = ''
 	for (let i =0; i< text.length; i++) {
-		let characterToNumber = text.charCodeAt(i)
+		let characterToNumber = text.charCodeAt(i) 
 		let encryptedNumber = characterToNumber + 3
 		let encryptedCharacter = String.fromCharCode(encryptedNumber)
 		encryptedText += encryptedCharacter
+		console.log(i, text[i], characterToNumber, encryptedNumber, encryptedCharacter, encryptedText)
 	}
 	return encryptedText
 }
@@ -12,11 +13,11 @@ function offsetEncrypt(text) {
 // offsetEncrypt("hello")
 
 
-function offsetDecrypt(text) {
+function offsetDecrypt(text, offset=3) {
 	let decryptedText = ''
 	for (let i =0; i< text.length; i++) {
 		let characterToNumber = text.charCodeAt(i)
-		let decryptedNumber = characterToNumber - 3
+		let decryptedNumber = characterToNumber - offset
 		let decryptedCharacter = String.fromCharCode(decryptedNumber)
 		decryptedText += decryptedCharacter
 	}
@@ -58,6 +59,7 @@ function hackPassword(encryptedText) {
 	for (let i = 1000; i < 10000; i++) {
 		let decrypted = passwordDecrypt(encryptedText, i.toString())
 		if (decrypted !== "") {
+			console.log(i, decrypted)
 			possiblePasswords.push(i.toString())
 		}
 	}
